@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="<%= weather.imageUrl %>" type="image/x-icon">
+</head>
+
+<body style="background-image: url('https://source.unsplash.com/1600x900/?<%= weather.observationpoint %>');">
+
+    <div class="card">
+        <form action="/" method="get">
+            <div class="search">
+                <input type="text" name="search" id="search-input">
+                <button type="submit" id="search-button"><i class="fas fa-search"></i>
+                    Search</button>
+            </div>
+        </form>
+        <div class="weather-info">
+            <h3>Weather - <%= weather.observationpoint %></h3>
+            <div class="skytext">
+                <%= weather.skytext %>
+            </div>
+            <div class="temperature">
+                Temperature: <%= weather.temperature %> °C
+            </div>
+            <div class="humidity">
+                Humidity: <%= weather.humidity %> %
+            </div>
+            <div class="winddisplay">
+                Wind: <%= weather.winddisplay %>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

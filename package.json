@@ -1,0 +1,32 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Simple weather application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ali-xDYT/WeatherApp.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Ali-xD YT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ali-xDYT/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/Ali-xDYT/WeatherApp#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "weather-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
